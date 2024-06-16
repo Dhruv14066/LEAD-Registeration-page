@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAD Registration</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <header>
+        
+        <nav id="navbar">
+            <img src="LEAD_logo.png" alt="LEAD Logo" class="logo">
+            <ul>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#help">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="responsive-container">
+        <h2 class="dialogue-box-title">Registration Form</h2>
+        <form action="submit_registration.php" method="POST">
+            <div class="form-group">
+                <label for="firstname">Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Thapar Email:</label>
+                <input type="text" id="Thapar Email" name="Thapar Email" placeholder="Enter Thapar email" required>
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" name="branch" placeholder="Enter branch" required>
+            </div>
+            <div class="form-group">
+                <label for="rollno">Roll Number:</label>
+                <input type="text" id="rollno" name="rollno" placeholder="Enter roll number" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-text-container">
+            <p id="moving-text">&copy; 2024 LEAD Society. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

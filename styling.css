@@ -1,0 +1,246 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+    box-sizing: border-box;
+    background-image: url('BG.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+#navbar .logo {
+    height: 50px;
+    width: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    background-color: #bbd9dc;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1100;
+    left: 0;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    word-spacing: 2rem;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333; 
+}
+  
+.container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(7, 191, 247, 0.1);
+    width: 400px;
+    margin: 100px auto; 
+    text-align: center;
+    position: relative;
+    zoom: 1; 
+    max-width: 100%; 
+    overflow: auto; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
+.form-group input::placeholder {
+    color: #ccc; 
+}
+
+.form-group input:focus {
+    opacity: 1; 
+    border-color: #aaa; 
+}
+
+button[type="submit"] {
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.dialog-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.dialog-box:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #5cb85c;
+    transform-origin: center;
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    opacity:0.5;
+    box-sizing: border-box;
+    
+}
+
+.gender-box {
+    margin-bottom: 20px;
+}
+
+.gender-box h3 {
+    margin-bottom: 10px;
+}
+
+.gender-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.gender input[type="radio"] {
+    margin-right: 10px;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.address input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    background-color: #E1F7F5;
+}
+
+footer p {
+    margin: 0;  
+    color: #555;
+    white-space: nowrap;
+}
+
+#moving-text {
+    animation: moving-text 5s linear infinite;
+}
+
+@keyframes moving-text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.dialogue-box {
+    zoom: 1; 
+    max-width: 100%; 
+    overflow: auto; 
+  }
